@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+     <ion-menu-button>
+
+     </ion-menu-button>
+    </ion-buttons>
+    <ion-title>PENGINAPAN VILLA BALI</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list color="success">
+    <ion-item color="success">
+      <ion-avatar slot="start">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/000/564/264/small/vector60-55-01.jpg"/>
+      </ion-avatar>
+      <ion-label>
+        <h1>Villa Bali</h1>
+        <p>Price: <span class="money">Rp3.000.000</span></p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <app-pickup-call-card status="hold" updatedAt="01/09/2024 00:30:00" createdAt="23/08/2024" notes="Proses Booking Villa Seluruh Kota Bali">
+    <ion-card-header header>
+      <ion-card-subtitle>Last pickup call</ion-card-subtitle>
+    </ion-card-header>
+    <ion-button color="success" fill="clear" size="full" footer (click)="goToPickupCalls()">See all...</ion-button>
+  </app-pickup-call-card>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="success" (click)="goToPickupCall()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
